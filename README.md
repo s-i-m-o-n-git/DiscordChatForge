@@ -179,7 +179,8 @@ Seuls les joueurs avec le niveau de permission OP peuvent utiliser les commandes
 
 * Non testé sur des versions Forge différentes de 1.12.2 (sera porté prochainement)
 * Pas de filtrage anti-spam ou modération automatique pour l'instant
-
+* Pas encore de configs pour les messages, traduction, emoji utilisé
+ 
 ---
 
 ## 🚧 Dépendances

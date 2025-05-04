@@ -32,7 +32,11 @@ public class DiscordChat {
     @EventHandler
     public void onServerStarting(FMLServerStartingEvent event) {
         // Enregistrement des commandes serveurs
-        event.registerServerCommand(new CommandChatDiscord());
+        try {
+            event.registerServerCommand(new CommandChatDiscord());
+        } catch (Throwable t) {
+            System.err.println("[ChatDiscord] Échec de l'enregistrement de la commande : " + t);
+        }
 
         // Notifie le début du démarrage du serveur
         ServerStatusNotifier.handleServerStarting();
